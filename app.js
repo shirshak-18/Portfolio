@@ -44,7 +44,7 @@ const projects = [
     title: "CALCULATOR",
     technologies: ["REACT", "JAVASCRIPT", "CSS"],
     description:
-      "Scientific calculator application built completely with React featuring advanced mathematical operations, memory functions, and clean modern interface design.",
+      "Simple calculator application built completely with React featuring basic mathematical operations and clean modern interface design.",
     githubUrl: "https://github.com/shirshak-18/Calculator",
     category: "Web Development",
   },
