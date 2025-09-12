@@ -1155,8 +1155,7 @@ class PortfolioApp {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          entry.target.style.opacity = "1";
-          entry.target.style.transform = "translateY(0)";
+          entry.target.classList.add("visible");
         }
       });
     }, observerOptions);
@@ -1165,9 +1164,7 @@ class PortfolioApp {
       ".experience__item, .achievement__item, .project-card, .contact__form, .footer__content"
     );
     animateElements.forEach((el) => {
-      el.style.opacity = "0";
-      el.style.transform = "translateY(30px)";
-      el.style.transition = "all 0.8s ease";
+      el.classList.add("reveal-on-scroll"); // start hidden
       observer.observe(el);
     });
   }
