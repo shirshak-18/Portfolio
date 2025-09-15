@@ -989,17 +989,35 @@ class PortfolioApp {
   // Contact form functionality
   setupContactForm() {
     const form = document.getElementById("contact-form");
+    const status = document.getElementById("form-status");
     if (!form) return;
 
-    form.addEventListener("submit", (e) => {
+    form.addEventListener("submit", async (e) => {
       e.preventDefault();
-      this.handleFormSubmit(form);
-    });
+      const formData = new FormData(form);
 
-    const inputs = form.querySelectorAll(".form-input");
-    inputs.forEach((input) => {
-      input.addEventListener("blur", () => this.validateField(input));
-      input.addEventListener("focus", () => this.clearFieldError(input));
+      try {
+        const res = await fetch(form.action, {
+          method: form.method,
+          body: formData,
+          headers: { Accept: "application/json" },
+        });
+
+        if (res.ok) {
+          form.reset();
+          status.style.display = "block";
+          status.textContent = "✅ Message sent! I'll reply soon.";
+          setTimeout(() => {
+            status.style.display = "none";
+          }, 5000);
+        } else {
+          status.style.display = "block";
+          status.textContent = "⚠️ There was a problem sending your message.";
+        }
+      } catch (error) {
+        status.style.display = "block";
+        status.textContent = "⚠️ Network error. Try again later.";
+      }
     });
   }
 

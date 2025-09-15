@@ -355,40 +355,67 @@
                 <span>Indore, India</span>
               </div>
             </div>
-            <form class="contact__form" id="contact-form">
-              <div class="form-group">
-                <input
-                  type="text"
-                  class="form-input"
-                  placeholder="YOUR NAME"
-                  required
-                />
-              </div>
-              <div class="form-group">
-                <input
-                  type="email"
-                  class="form-input"
-                  placeholder="YOUR EMAIL"
-                  required
-                />
-              </div>
-              <div class="form-group">
-                <input
-                  type="text"
-                  class="form-input"
-                  placeholder="WHAT DO YOU WANT TO DISCUSS?"
-                />
-              </div>
-              <div class="form-group">
-                <textarea
-                  class="form-input form-textarea"
-                  placeholder="YOUR MESSAGE"
-                  rows="5"
-                  required
-                ></textarea>
-              </div>
-              <button type="submit" class="form-submit">SEND MESSAGE</button>
+            <form
+              id="contact-form"
+              action="https://formspree.io/f/xqadopye"
+              method="POST"
+              class="contact__form"
+            >
+              <input
+                type="text"
+                name="name"
+                class="form-input"
+                placeholder="Your Name"
+                required
+              />
+              <input
+                type="email"
+                name="email"
+                class="form-input"
+                placeholder="Your Email"
+                required
+              />
+              <input
+                type="text"
+                name="topic"
+                class="form-input"
+                placeholder="What do you want to discuss"
+                required
+              />
+              <textarea
+                name="message"
+                class="form-input form-textarea"
+                placeholder="Your Message"
+                rows="5"
+                required
+              ></textarea>
+              <button type="submit" class="form-submit">Send Message</button>
             </form>
+
+            <!-- Add a hidden thank-you message -->
+            <p
+              id="form-status"
+              class="form-status"
+              style="
+                display: none;
+                color: var(--accent-color);
+                margin-top: 10px;
+              "
+            >
+              ✅ Message sent! I'll reply soon.
+            </p>
+
+            <p
+              id="form-status"
+              class="form-status"
+              style="
+                display: none;
+                color: var(--accent-color);
+                margin-top: 10px;
+              "
+            >
+              ✅ Message sent! I'll reply soon.
+            </p>
           </div>
         </div>
       </section>
