@@ -5,11 +5,11 @@
 const projects = [
   {
     id: 1,
-    title: "PPT GENERATOR",
-    technologies: ["TYPESCRIPT", "REACT", "VITE"],
+    title: "Social Media",
+    technologies: ["Vercel", "REACT", "VITE"],
     description:
-      "AI-powered presentation generator that converts markdown text to professional PowerPoint slides with intelligent content structuring and modern design templates.",
-    githubUrl: "https://github.com/shirshak-18/ppt-generator",
+      "A social media-style web application that allows users to create, view, and delete posts, built using React and modern routing/state management patterns.",
+    githubUrl: "https://github.com/shirshak-18/social-media",
     category: "Web Development",
   },
   {
