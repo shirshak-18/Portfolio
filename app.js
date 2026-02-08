@@ -5,6 +5,26 @@
 const projects = [
   {
     id: 1,
+    title: "Pairly",
+    technologies: [
+      "React",
+      "Vite",
+      "Tailwind CSS",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "Vercel",
+      "Render",
+    ],
+    description:
+      "A full-stack social networking and dating platform featuring anonymous messaging, user profiles, and mutual crush notifications. Built with a React frontend and Node.js backend, secured with JWT authentication, and deployed using Vercel and Render.",
+    githubUrl: "https://github.com/shirshak-18/pairly",
+    liveUrl: "https://pairly-rho.vercel.app",
+    category: "Full Stack Web Development",
+  },
+
+  {
+    id: 2,
     title: "Social Media",
     technologies: ["Vercel", "REACT", "VITE"],
     description:
@@ -13,7 +33,7 @@ const projects = [
     category: "Web Development",
   },
   {
-    id: 2,
+    id: 3,
     title: "MYNTRA CLONE",
     technologies: ["HTML", "CSS", "JAVASCRIPT"],
     description:
@@ -22,7 +42,7 @@ const projects = [
     category: "Web Development",
   },
   {
-    id: 3,
+    id: 4,
     title: "CRICKET GAME",
     technologies: ["JAVASCRIPT", "HTML", "CSS"],
     description:
@@ -31,7 +51,7 @@ const projects = [
     category: "Game Development",
   },
   {
-    id: 4,
+    id: 5,
     title: "TODO APP",
     technologies: ["JAVASCRIPT", "HTML", "CSS"],
     description:
@@ -40,7 +60,7 @@ const projects = [
     category: "Web Development",
   },
   {
-    id: 5,
+    id: 6,
     title: "CALCULATOR",
     technologies: ["REACT", "JAVASCRIPT", "CSS"],
     description:
@@ -414,7 +434,7 @@ class PortfolioApp {
       primaryBtn.addEventListener("click", () => {
         this.showNotification(
           "Certificate viewing functionality coming soon!",
-          "info"
+          "info",
         );
       });
     }
@@ -889,7 +909,7 @@ class PortfolioApp {
                     <div class="project-modal__tech">
                         ${project.technologies
                           .map(
-                            (tech) => `<span class="tech-tag">${tech}</span>`
+                            (tech) => `<span class="tech-tag">${tech}</span>`,
                           )
                           .join("")}
                     </div>
@@ -1179,7 +1199,7 @@ class PortfolioApp {
     }, observerOptions);
 
     const animateElements = document.querySelectorAll(
-      ".experience__item, .achievement__item, .project-card, .contact__form, .footer__content"
+      ".experience__item, .achievement__item, .project-card, .contact__form, .footer__content",
     );
     animateElements.forEach((el) => {
       el.classList.add("reveal-on-scroll"); // start hidden
@@ -1309,7 +1329,7 @@ document.head.appendChild(styleSheet);
 
 // Performance optimization
 const prefersReducedMotion = window.matchMedia(
-  "(prefers-reduced-motion: reduce)"
+  "(prefers-reduced-motion: reduce)",
 );
 if (prefersReducedMotion.matches) {
   const style = document.createElement("style");
