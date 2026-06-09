@@ -7,17 +7,17 @@ const projects = [
     id: 1,
     title: "Pairly",
     technologies: [
-      "React",
-      "Vite",
-      "Tailwind CSS",
       "Node.js",
       "Express",
       "MongoDB",
+      "React",
+      "Vite",
+      "Tailwind CSS",
       "Vercel",
       "Render",
     ],
     description:
-      "A full-stack social networking and dating platform featuring anonymous messaging, user profiles, and mutual crush notifications. Built with a React frontend and Node.js backend, secured with JWT authentication, and deployed using Vercel and Render.",
+      "Pairly is a full-stack social networking and dating platform that enables users to create profiles, discover matches, exchange anonymous messages, and receive mutual match notifications. Implemented JWT-based authentication, email OTP verification, protected routes, and RESTful APIs using Node.js and Express. Built a responsive React frontend and integrated MongoDB for scalable user and messaging data management.",
     githubUrl: "https://github.com/shirshak-18/pairly",
     liveUrl: "https://pairly-rho.vercel.app",
     category: "Full Stack Web Development",
@@ -25,47 +25,22 @@ const projects = [
 
   {
     id: 2,
+    title: "MyGit",
+    technologies: ["Python", "SHA-1 Hashing", "CLI", "File Systems", "Zlib"],
+    description:
+      "A custom version control system built from scratch in Python, implementing core Git-inspired concepts such as content-addressable object storage, commits, branching, checkout, status, and log operations. Designed custom Blob, Tree, and Commit objects, with SHA-1 based object hashing, compressed storage, branch references, and repository state restoration.",
+    githubUrl: "https://github.com/shirshak-18/mygit",
+    liveUrl: null,
+    category: "Systems Programming",
+  },
+
+  {
+    id: 3,
     title: "Social Media",
     technologies: ["Vercel", "REACT", "VITE"],
     description:
-      "A social media-style web application that allows users to create, view, and delete posts, built using React and modern routing/state management patterns.",
+      "A social media-style web application built with React, Vite, and React Router, allowing users to create, view, and delete posts through an interactive and responsive interface. Implemented global state management using Context API and Reducer patterns, enabling efficient data flow across components while maintaining a clean and scalable frontend architecture.",
     githubUrl: "https://github.com/shirshak-18/social-media",
-    category: "Web Development",
-  },
-  {
-    id: 3,
-    title: "MYNTRA CLONE",
-    technologies: ["HTML", "CSS", "JAVASCRIPT"],
-    description:
-      "E-commerce platform replica with product browsing, cart functionality, and responsive user interface design mimicking the popular Myntra shopping experience.",
-    githubUrl: "https://github.com/shirshak-18/myntra-clone",
-    category: "Web Development",
-  },
-  {
-    id: 4,
-    title: "CRICKET GAME",
-    technologies: ["JAVASCRIPT", "HTML", "CSS"],
-    description:
-      "Interactive bat-ball-stump strategy game where players choose options and compete against computer logic with win/loss mechanics based on classic hand game rules.",
-    githubUrl: "https://github.com/shirshak-18/Cricket-Game",
-    category: "Game Development",
-  },
-  {
-    id: 5,
-    title: "TODO APP",
-    technologies: ["JAVASCRIPT", "HTML", "CSS"],
-    description:
-      "Task management system with add, edit, delete functionality and local storage persistence for productivity enhancement and organized workflow management.",
-    githubUrl: "https://github.com/shirshak-18/TodoApp",
-    category: "Web Development",
-  },
-  {
-    id: 6,
-    title: "CALCULATOR",
-    technologies: ["REACT", "JAVASCRIPT", "CSS"],
-    description:
-      "Simple calculator application built completely with React featuring basic mathematical operations and clean modern interface design.",
-    githubUrl: "https://github.com/shirshak-18/Calculator",
     category: "Web Development",
   },
 ];
