@@ -36,12 +36,12 @@ const projects = [
 
   {
     id: 3,
-    title: "Social Media",
-    technologies: ["Vercel", "REACT", "VITE"],
+    title: "AI Resume Parser & Candidate Ranking System",
+    technologies: ["Python", "Groq LLM", "Pydantic", "AI"],
     description:
-      "A social media-style web application built with React, Vite, and React Router, allowing users to create, view, and delete posts through an interactive and responsive interface. Implemented global state management using Context API and Reducer patterns, enabling efficient data flow across components while maintaining a clean and scalable frontend architecture.",
-    githubUrl: "https://github.com/shirshak-18/social-media",
-    category: "Web Development",
+      "An AI-powered resume parsing and candidate ranking system built using Python, Groq LLMs, and Pydantic. Extracts structured candidate information from PDF and DOCX resumes, evaluates candidate-job fit based on skills, education, and experience requirements, and automatically ranks applicants using structured LLM outputs and prompt engineering workflows.",
+    githubUrl: "https://github.com/shirshak-18/ai_resume_parser",
+    category: "Artificial Intelligence",
   },
 ];
 
